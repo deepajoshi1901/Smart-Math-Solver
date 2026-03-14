@@ -1,0 +1,1 @@
+This project is a modern fitness landing page designed with interactive UI, hover effects, and smooth animations to create an engaging user experience.
