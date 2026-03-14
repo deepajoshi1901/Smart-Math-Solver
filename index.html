@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FitLife</title>
+<title>Smart Math Solver</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h2>FitLife</h2>
-
-<nav id="navMenu">
-<a href="#">Home</a>
-<a href="#">Programs</a>
-<a href="#">Trainers</a>
-<a href="#">Contact</a>
-</nav>
-
-<button class="menuBtn" onclick="toggleMenu()">☰</button>
-
+<h1>🧮 Smart Math Solver</h1>
+<p>Do complex math operations instantly</p>
 </header>
 
-<section class="hero">
-<h1>Transform Your Body</h1>
-<p>Join the best fitness community</p>
-<button onclick="joinNow()">Join Now</button>
-</section>
+<div class="container">
 
-<section class="features">
+<input type="number" id="num1" placeholder="Enter First Number">
+<input type="number" id="num2" placeholder="Enter Second Number">
 
-<div class="card">
-<h3>Personal Training</h3>
-<p>Professional trainers to guide you.</p>
+<div class="buttons">
+
+<button onclick="add()">Addition</button>
+<button onclick="sub()">Subtraction</button>
+<button onclick="mul()">Multiplication</button>
+<button onclick="div()">Division</button>
+<button onclick="power()">Power</button>
+<button onclick="sqrt()">Square Root</button>
+<button onclick="percent()">Percentage</button>
+
 </div>
 
-<div class="card">
-<h3>Nutrition Plan</h3>
-<p>Healthy diet plans for better results.</p>
-</div>
+<h2 id="result">Result: </h2>
 
-<div class="card">
-<h3>Workout Programs</h3>
-<p>Workout routines for all levels.</p>
 </div>
-
-</section>
 
 <footer>
-<p>© 2026 FitLife Fitness</p>
+<p>Made with ❤️ by Deep</p>
 </footer>
 
 <script src="script.js"></script>

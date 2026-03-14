@@ -1,36 +1,44 @@
-// mobile menu
-function toggleMenu(){
-
-const nav = document.getElementById("navMenu");
-
-if(nav.style.display === "block"){
-nav.style.display = "none";
-}else{
-nav.style.display = "block";
+function getNumbers(){
+let a = parseFloat(document.getElementById("num1").value);
+let b = parseFloat(document.getElementById("num2").value);
+return [a,b];
 }
 
+function show(result){
+document.getElementById("result").innerHTML="Result: "+result;
 }
 
-// join button
-function joinNow(){
-alert("Welcome to FitLife Fitness!");
+function add(){
+let [a,b]=getNumbers();
+show(a+b);
 }
 
-// scroll animation
-
-const cards = document.querySelectorAll(".card");
-
-window.addEventListener("scroll",()=>{
-
-cards.forEach(card=>{
-
-const position = card.getBoundingClientRect().top;
-const screen = window.innerHeight;
-
-if(position < screen - 100){
-card.classList.add("show");
+function sub(){
+let [a,b]=getNumbers();
+show(a-b);
 }
 
-});
+function mul(){
+let [a,b]=getNumbers();
+show(a*b);
+}
 
-});
+function div(){
+let [a,b]=getNumbers();
+show(a/b);
+}
+
+function power(){
+let [a,b]=getNumbers();
+show(Math.pow(a,b));
+}
+
+function sqrt(){
+let [a,b]=getNumbers();
+show("√"+a+" = "+Math.sqrt(a));
+}
+
+function percent(){
+let [a,b]=getNumbers();
+show((a/b)*100+"%");
+}
